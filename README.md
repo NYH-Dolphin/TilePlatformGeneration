@@ -53,15 +53,16 @@ Pokémon Tileset
 
 2D -> 2.5D Effect
 
-<img src="README.assets/image-20230915052746806.png" alt="image-20230915052746806" style="zoom:67%;" />	<img src="Scneario_AIGC.assets/image-20230915085453368.png" alt="image-20230915085453368" style="zoom:67%;" />
+<img src="README.assets/image-20230915052746806.png" alt="image-20230915052746806" style="zoom:67%;" />	<img src="README.assets/image-20230915085453368.png" alt="image-20230915085453368" style="zoom:67%;" />
 
 ## 3. How To Use
 
 1. Select the Tilemap you have generated
 2. Under the same Gameobject which contain the `Tilemap` component. Add the `Tilemap Generator` Script
 3. Follow the guidance to set the tileset and the map
-   <img src="Scneario_AIGC.assets/image-20230916131955926.png" alt="image-20230916131955926" style="zoom:80%;" />
-   ![image-20230916132038580](README.assets/image-20230916132038580.png)
+   
+   - <img src="README.assets/image-20230916131955926.png" alt="image-20230916131955926" style="zoom:80%;" />![image-20230916132038580](README.assets/image-20230916132038580.png)
+   
    - Keep the name of each tile as number in both tile assets and in the tilemap
 4. You can freely click the `Update Tileset`, `Update Tilemap Array`, `Clean Tilemap`, and `Random 5x5 Tilemap` in editor to see what happens
 
