@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="expose un-implemented functions">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" afterDir="false" />
+    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="left un-implement function">
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerInfo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +100,7 @@
       <workItem from="1694904945179" duration="2863000" />
       <workItem from="1694908146269" duration="5432000" />
       <workItem from="1697666961312" duration="78000" />
-      <workItem from="1697849219464" duration="19589000" />
+      <workItem from="1697849219464" duration="19947000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <option name="closed" value="true" />
@@ -184,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697919501258</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="left un-implement function">
+      <option name="closed" value="true" />
+      <created>1697920099402</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697920099402</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +226,7 @@
     <MESSAGE value="new npc profile" />
     <MESSAGE value="whole game flow" />
     <MESSAGE value="expose un-implemented functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="expose un-implemented functions" />
+    <MESSAGE value="left un-implement function" />
+    <option name="LAST_COMMIT_MESSAGE" value="left un-implement function" />
   </component>
 </project>

@@ -30,9 +30,9 @@ namespace Character
 
 
         // TODO decide how to calculate the score based on the tile collection
-        public float GetScore()
+        public string GetScore()
         {
-            return _fScore;
+            return _fScore + "";
         }
 
         public void OnResetPlayerInfo()
