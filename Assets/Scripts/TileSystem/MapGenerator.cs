@@ -76,6 +76,7 @@ namespace Editor.TileSystem
 
         public void OnGenerateMap(string prompts)
         {
+            // TODO generate MapArray based on the prompts;
             RandomArray();
             LoadTiles();
         }

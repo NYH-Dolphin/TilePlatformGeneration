@@ -3,6 +3,7 @@ using System.Collections;
 using Character;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace UI
 {
@@ -14,7 +15,7 @@ namespace UI
         public static UITypeWriter Instance;
 
         private string _showText;
-        public string _fullDescription = "I want a beautiful city.";
+        public string fullDescription;
 
         private void Awake()
         {
@@ -23,7 +24,7 @@ namespace UI
 
         private void Start()
         {
-            _showText = _fullDescription;
+            OnResetTypeWriter();
         }
 
         public void OnTriggerTypeWriter()
@@ -33,7 +34,8 @@ namespace UI
 
         public void OnResetTypeWriter()
         {
-            _showText = _fullDescription;
+            fullDescription = GetDescription();
+            _showText = fullDescription;
         }
 
         public void OnCleanText()
@@ -54,14 +56,20 @@ namespace UI
             if (!PlayerController.BEnd && showDescription)
             {
                 dialogueText.text = string.Empty;
-                for (int i = 0; i <= _fullDescription.Length; i++)
+                for (int i = 0; i <= fullDescription.Length; i++)
                 {
-                    dialogueText.text = _fullDescription.Substring(0, i);
+                    dialogueText.text = fullDescription.Substring(0, i);
                     yield return new WaitForSeconds(fDelay);
                 }
             }
         }
 
+        /// <summary>
+        /// Set the Dialogue of the NPC
+        /// </summary>
+        /// <param name="dialogue">string to display</param>
+        /// <param name="play">is true, play the animation</param>
+        /// <param name="showDescription">is true, will overwrite the dialogue and show description few seconds later</param>
         public void SetDialogue(string dialogue, bool play = false, bool showDescription = false)
         {
             _showText = dialogue;
@@ -69,6 +77,13 @@ namespace UI
             {
                 StartCoroutine(PlayText(_showText, showDescription));
             }
+        }
+
+
+        // TODO Get the desired description
+        public string GetDescription()
+        {
+            return "I want a beautiful city.";
         }
     }
 }

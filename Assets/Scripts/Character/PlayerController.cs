@@ -77,7 +77,7 @@ namespace Character
             OnResetPlayer();
             UIManger.Instance.OnResetUI();
             UITypeWriter.Instance.OnResetTypeWriter();
-            UITypeWriter.Instance.SetDialogue(UITypeWriter.Instance._fullDescription, play: true);
+            UITypeWriter.Instance.SetDialogue(UITypeWriter.Instance.fullDescription, play: true);
         }
 
         public void OnResetPlayer()
