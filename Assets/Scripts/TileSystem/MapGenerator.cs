@@ -26,25 +26,12 @@ namespace Editor.TileSystem
         private void Start()
         {
             _mapArray = new int[width, height];
-            OnResetMap();
         }
 
         private void LoadTiles()
         {
             // Remove previous tile
-            List<GameObject> prevTiles = new List<GameObject>();
-            if (transform.childCount != 0)
-            {
-                for (int i = 0; i < transform.childCount; i++)
-                {
-                    prevTiles.Add(transform.GetChild(i).gameObject);
-                }
-            }
-
-            for (int i = 0; i < prevTiles.Count; i++)
-            {
-                Destroy(prevTiles[i]);
-            }
+            OnResetMap();
 
             // Load the new tile
             for (int i = 0; i < width; i++)
@@ -56,7 +43,7 @@ namespace Editor.TileSystem
                 }
             }
         }
-        
+
         public void RandomArray()
         {
             for (int i = 0; i < width; i++)
@@ -70,6 +57,24 @@ namespace Editor.TileSystem
 
 
         public void OnResetMap()
+        {
+            List<GameObject> prevTiles = new List<GameObject>();
+            if (transform.childCount != 0)
+            {
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    prevTiles.Add(transform.GetChild(i).gameObject);
+                }
+            }
+
+            for (int i = 0; i < prevTiles.Count; i++)
+            {
+                Destroy(prevTiles[i]);
+            }
+        }
+
+
+        public void OnGenerateMap(string prompts)
         {
             RandomArray();
             LoadTiles();

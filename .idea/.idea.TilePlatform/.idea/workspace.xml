@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="main ui" />
+    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="new npc profile">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ProfilePopdown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ProfilePopdown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ProfilePopup.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ProfilePopup.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveDollarMario.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FiveDollarMario.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileSystem/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileSystem/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +107,7 @@
       <workItem from="1694904945179" duration="2863000" />
       <workItem from="1694908146269" duration="5432000" />
       <workItem from="1697666961312" duration="78000" />
-      <workItem from="1697849219464" duration="13409000" />
+      <workItem from="1697849219464" duration="18567000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <option name="closed" value="true" />
@@ -156,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697910808945</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new npc profile">
+      <option name="closed" value="true" />
+      <created>1697914185355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697914185355</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +206,7 @@
     <MESSAGE value="player behaviour" />
     <MESSAGE value="game system &amp; ui information" />
     <MESSAGE value="main ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="main ui" />
+    <MESSAGE value="new npc profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="new npc profile" />
   </component>
 </project>
