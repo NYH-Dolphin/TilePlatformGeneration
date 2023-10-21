@@ -26,8 +26,7 @@ namespace Editor.TileSystem
         private void Start()
         {
             _mapArray = new int[width, height];
-            RandomArray();
-            LoadTiles();
+            OnResetMap();
         }
 
         private void LoadTiles()
@@ -67,6 +66,13 @@ namespace Editor.TileSystem
                     _mapArray[i, j] = Random.Range(0, tilesPrefab.Count);
                 }
             }
+        }
+
+
+        public void OnResetMap()
+        {
+            RandomArray();
+            LoadTiles();
         }
 
 

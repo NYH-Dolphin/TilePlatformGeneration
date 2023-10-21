@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -12,9 +12,17 @@ namespace UI
 
         private string _fullDescription = "I want a beautiful city.";
 
+        private string _info = "\n\n<size=36>(Press <color=#ff0000>[Tab]</color> to toggle on/off the dialogue)</size>";
+
         public void OnTriggerTypeWriter()
         {
             StartCoroutine(PlayText());
+        }
+
+
+        public void OnCleanText()
+        {
+            dialogueText.text = String.Empty;
         }
 
         IEnumerator PlayText()
@@ -24,6 +32,9 @@ namespace UI
                 dialogueText.text = _fullDescription.Substring(0, i);
                 yield return new WaitForSeconds(fDelay);
             }
+
+            yield return new WaitForSeconds(0.5f);
+            dialogueText.text += _info;
         }
     }
 }

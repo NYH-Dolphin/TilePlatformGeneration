@@ -11,23 +11,30 @@ namespace UI
 
         public static bool BEnable;
         private static readonly int Pop = Animator.StringToHash("pop");
-        
 
 
         private void Start()
         {
             _aProfile = profile.GetComponent<Animator>();
             _aDialogueBox = dialogueBox.GetComponent<Animator>();
+
+            // initially set it to true
+            OnTriggerDialogue();
         }
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Tab))
             {
-                BEnable = !BEnable;
-                OnTriggerProfile();
-                OnTriggerDialogueBox();
+                OnTriggerDialogue();
             }
+        }
+
+        private void OnTriggerDialogue()
+        {
+            BEnable = !BEnable;
+            OnTriggerProfile();
+            OnTriggerDialogueBox();
         }
 
 

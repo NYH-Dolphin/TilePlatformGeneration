@@ -10,7 +10,7 @@ namespace Character
     {
         private int _xMove;
         private int _yMove;
-        
+
         public PlayerInfo PlayerInfo;
 
         private void Start()
@@ -43,7 +43,9 @@ namespace Character
                 }
             }
 
-            if (_xMove == MapGenerator.Instance.width - 1 && _yMove == MapGenerator.Instance.height - 1)
+            Vector2 playerPos = transform.position;
+            if (Math.Abs(playerPos.x - (MapGenerator.Instance.width - 1)) < 0.01f &&
+                Math.Abs(playerPos.y - (MapGenerator.Instance.height - 1)) < 0.01f)
             {
                 OnGameEnd();
             }
@@ -51,6 +53,9 @@ namespace Character
 
         private void OnGameEnd()
         {
+            PlayerInfo.OnResetPlayerInfo();
+            MapGenerator.Instance.OnResetMap();
+            OnResetPlayer();
         }
 
 
