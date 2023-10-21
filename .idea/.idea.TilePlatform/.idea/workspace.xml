@@ -6,9 +6,83 @@
   <component name="ChangeListManager">
     <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario 2D Package Installer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario 2D Package Installer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario Package Installer 2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario Package Installer 2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/CompositionEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/CompositionEditor/CompositionEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/CompositionEditor/CompositionEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/DataBuilder.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/DataBuilder/DataBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/DataBuilder/DataBuilder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/DataBuilder/DepthMap.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/DataBuilder/DepthMap.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/ImageEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/ImageEditor/ImageEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/ImageEditor/ImageEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/ImageEditor/ImageEditorUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/ImageEditor/ImageEditorUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images/ImageDataClasses.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images/ImageDataClasses.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images/Images.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images/Images.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images/ImagesUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Images/ImagesUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/InpaintingEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/InpaintingEditor/InpaintingEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/InpaintingEditor/InpaintingEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/InpaintingEditor/InpaintingEditorUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/InpaintingEditor/InpaintingEditorUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Models/Models.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Models/Models.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Models/ModelsUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/Models/ModelsUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PixelEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PixelEditor/PixelEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PixelEditor/PixelEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PixelEditor/PixelEditorUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PixelEditor/PixelEditorUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptImages.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptImages/PromptImages.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptImages/PromptImages.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptImages/PromptImagesUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptImages/PromptImagesUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow/PromptBuilderWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow/PromptBuilderWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow/PromptWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow/PromptWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow/PromptWindowUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/PromptWindow/PromptWindowUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/UpscaleEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/UpscaleEditor/UpscaleEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/UpscaleEditor/UpscaleEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/UpscaleEditor/UpscaleEditorUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Editor/UpscaleEditor/UpscaleEditorUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins/APIPricing.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins/APIPricing.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins/ApiClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins/ApiClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins/PluginSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Plugins/PluginSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario2D.wlt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenario2D.wlt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TileGenerationPlatform.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TileGenerationPlatform.csv.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tileset/2dTiles/9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tileset/2dTiles/9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/settings.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/settings_two.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/settings_two.json.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +96,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e3aa04a3988f497990de86c7a3ea1ec2942200/19/809dac9d/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e3aa04a3988f497990de86c7a3ea1ec2942200/2a/827458c3/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e3aa04a3988f497990de86c7a3ea1ec2942200/c8/cc905340/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2VPowNGRz3nWPbKXED0wNz5PCQI" />
@@ -66,10 +143,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="29568">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="29568" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -99,6 +176,8 @@
       <workItem from="1694896448855" duration="2514000" />
       <workItem from="1694904945179" duration="2863000" />
       <workItem from="1694908146269" duration="5432000" />
+      <workItem from="1697666961312" duration="78000" />
+      <workItem from="1697849219464" duration="2032000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <option name="closed" value="true" />
@@ -117,6 +196,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Default tile asset and tilemap generation tool" />
