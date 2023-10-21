@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="player behaviour">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/DialogueBoxPopdown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/DialogueBoxPopdown.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/10.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/12.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/12.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/13.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/13.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resource/Prefabs/PokemonTileset/9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveDollarMario.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FiveDollarMario.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileSystem/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileSystem/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-    </list>
+    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="main ui" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +98,7 @@
       <workItem from="1694904945179" duration="2863000" />
       <workItem from="1694908146269" duration="5432000" />
       <workItem from="1697666961312" duration="78000" />
-      <workItem from="1697849219464" duration="12748000" />
+      <workItem from="1697849219464" duration="13409000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <option name="closed" value="true" />
@@ -163,7 +140,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697905934621</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="game system &amp; ui information">
+      <option name="closed" value="true" />
+      <created>1697907522236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697907522236</updated>
+    </task>
+    <task id="LOCAL-00007" summary="main ui">
+      <option name="closed" value="true" />
+      <created>1697910808945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697910808945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +187,8 @@
     <MESSAGE value="rapid prototype" />
     <MESSAGE value="ui sprite and animation test" />
     <MESSAGE value="player behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="player behaviour" />
+    <MESSAGE value="game system &amp; ui information" />
+    <MESSAGE value="main ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="main ui" />
   </component>
 </project>
