@@ -64,7 +64,7 @@ namespace Character
         private void OnGameEnd()
         {
             BEnd = true;
-            UITypeWriter.Instance.SetDialogue("Game Over!\n (Press [Enter] to play again)");
+            UITypeWriter.Instance.SetDialogue($"Game Over! Your score is: {PlayerInfo.GetScore()}!\n (Press [Enter] to play again)");
             UIManger.Instance.OnEnableDialogue();
         }
 
