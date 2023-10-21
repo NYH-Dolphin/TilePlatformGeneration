@@ -10,7 +10,7 @@ namespace UI
         public TextMeshProUGUI dialogueText;
         public float fDelay = 0.1f;
 
-        private string _fullDescription = "I want a beautiful city";
+        private string _fullDescription = "I want a beautiful city.";
 
         public void OnTriggerTypeWriter()
         {
