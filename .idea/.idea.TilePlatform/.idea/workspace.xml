@@ -4,46 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="the majority of the game system has done">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/appear.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/appear.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/bgm.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/bgm.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/move.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/move.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/FiveDollarGame.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/FiveDollarGame.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Help.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Help.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/BGMBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/BGMBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHelp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHelp.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 7 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Group 7 (1).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/back.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/help.png.meta" afterDir="false" />
+    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveDollarMario.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveDollarMario.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveDollarGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FiveDollarGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Help.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Help.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +104,8 @@
       <workItem from="1694908146269" duration="5432000" />
       <workItem from="1697666961312" duration="78000" />
       <workItem from="1697849219464" duration="20063000" />
-      <workItem from="1697920412349" duration="4742000" />
+      <workItem from="1697920412349" duration="5531000" />
+      <workItem from="1697944338050" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <option name="closed" value="true" />
@@ -245,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697936273658</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="almost done">
+      <option name="closed" value="true" />
+      <created>1697936468513</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697936468513</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +258,7 @@
     <MESSAGE value="left un-implement function" />
     <MESSAGE value="slightly modification" />
     <MESSAGE value="the majority of the game system has done" />
-    <option name="LAST_COMMIT_MESSAGE" value="the majority of the game system has done" />
+    <MESSAGE value="almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
 </project>

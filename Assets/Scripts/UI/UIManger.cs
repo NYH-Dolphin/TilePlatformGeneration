@@ -17,6 +17,7 @@ namespace UI
         public Button btnGo;
         public AudioSource audAppear;
         public GameObject hint;
+        public GameObject tileset;
 
         private Animator _aProfile;
         private Animator _aDialogueBox;
@@ -53,6 +54,7 @@ namespace UI
         {
             BEnable = true;
             hint.SetActive(false);
+            tileset.SetActive(true);
             OnTriggerProfile();
             OnTriggerDialogueBox();
             StartCoroutine(PlayAppearAudio());
@@ -68,6 +70,7 @@ namespace UI
         {
             BEnable = false;
             hint.SetActive(true);
+            tileset.SetActive(false);
             OnTriggerProfile();
             OnTriggerDialogueBox();
         }
