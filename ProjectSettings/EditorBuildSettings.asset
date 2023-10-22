@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GemTemp/Gem.unity
-    guid: 44953642c5f95ec4d8b905a6229cc724
+    path: Assets/Scenes/FiveDollarGame.unity
+    guid: fb6eca589bc3e264ea2111bc52200041
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: b2b208d50b7ea954290b470f3d9fa945
   m_configObjects: {}

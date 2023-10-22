@@ -1,7 +1,9 @@
+using System.Collections;
 using Character;
 using Editor.TileSystem;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace UI
@@ -13,6 +15,8 @@ namespace UI
         public TMP_InputField inputField;
         public TextMeshProUGUI description;
         public Button btnGo;
+        public AudioSource audAppear;
+        public GameObject hint;
 
         private Animator _aProfile;
         private Animator _aDialogueBox;
@@ -48,13 +52,22 @@ namespace UI
         public void OnEnableDialogue()
         {
             BEnable = true;
+            hint.SetActive(false);
             OnTriggerProfile();
             OnTriggerDialogueBox();
+            StartCoroutine(PlayAppearAudio());
+        }
+
+        IEnumerator PlayAppearAudio()
+        {
+            yield return new WaitForSeconds(0.5f);
+            audAppear.Play();
         }
 
         public void OnDisableDialogue()
         {
             BEnable = false;
+            hint.SetActive(true);
             OnTriggerProfile();
             OnTriggerDialogueBox();
         }
@@ -81,7 +94,7 @@ namespace UI
             }
             else
             {
-                inputField.text = "<color=#adcce4>" + description.text + "</color>";
+                inputField.text = "<color=#191970>" + description.text + "</color>";
                 inputField.interactable = false;
                 btnGo.enabled = false;
                 OnDisableDialogue();
@@ -94,6 +107,11 @@ namespace UI
             btnGo.enabled = true;
             inputField.interactable = true;
             inputField.text = "";
+        }
+
+        public void OnClickHelp()
+        {
+            SceneManager.LoadScene("Help");
         }
     }
 }

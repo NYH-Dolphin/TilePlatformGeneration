@@ -17,6 +17,8 @@ namespace UI
         private string _showText;
         public string fullDescription;
 
+        private bool _bLock;
+
         private void Awake()
         {
             Instance = this;
@@ -45,6 +47,9 @@ namespace UI
 
         IEnumerator PlayText(string text, bool showDescription = false)
         {
+            if (_bLock) yield break;
+
+            _bLock = true;
             for (int i = 0; i <= text.Length; i++)
             {
                 dialogueText.text = text.Substring(0, i);
@@ -62,6 +67,7 @@ namespace UI
                     yield return new WaitForSeconds(fDelay);
                 }
             }
+            _bLock = false;
         }
 
         /// <summary>

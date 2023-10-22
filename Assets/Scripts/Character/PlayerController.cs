@@ -8,6 +8,8 @@ namespace Character
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerController : MonoBehaviour
     {
+
+        [SerializeField] private AudioSource audMove;
         private int _xMove;
         private int _yMove;
         
@@ -39,6 +41,7 @@ namespace Character
                     Vector2 pos = transform.position;
                     pos.y += 1;
                     transform.position = pos;
+                    audMove.Play();
                 }
             }
 
@@ -49,6 +52,7 @@ namespace Character
                     Vector2 pos = transform.position;
                     pos.x += 1;
                     transform.position = pos;
+                    audMove.Play();
                 }
             }
 
