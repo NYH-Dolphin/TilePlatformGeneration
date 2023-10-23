@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="">
+    <list default="true" id="1d8290aa-5c45-472b-902a-8890fdde8147" name="Changes" comment="gpt get description">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TilePlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveDollarGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FiveDollarGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileSystem/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileSystem/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITypeWriter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,7 @@
       <workItem from="1697920412349" duration="5531000" />
       <workItem from="1697944338050" duration="651000" />
       <workItem from="1698019821877" duration="986000" />
-      <workItem from="1698026205549" duration="1053000" />
+      <workItem from="1698026205549" duration="1991000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <option name="closed" value="true" />
@@ -231,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697944637243</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="gpt get description">
+      <option name="closed" value="true" />
+      <created>1698027407572</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698027407572</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="the majority of the game system has done" />
     <MESSAGE value="almost done" />
     <MESSAGE value="add tileset guidance" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tileset guidance" />
+    <MESSAGE value="gpt get description" />
+    <option name="LAST_COMMIT_MESSAGE" value="gpt get description" />
   </component>
 </project>

@@ -202,8 +202,9 @@ namespace UI
 
             // Retrieve the description and tile list for the random index
             string randomDescription = levelDescriptions[randomIndex];
-            int[] randomTileList = tileLists[randomIndex];
-            UIManger.Instance.SetTilesHint(randomTileList);
+            int[] randomDesireTiles = tileLists[randomIndex];
+            PlayerController.Instance.PlayerInfo.SetDesireTiles(randomDesireTiles);
+            UIManger.Instance.SetTilesHint(randomDesireTiles);
             return randomDescription;
         }
     }

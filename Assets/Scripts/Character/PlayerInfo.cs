@@ -5,10 +5,8 @@ namespace Character
     public class PlayerInfo
     {
         private Dictionary<int, int> _dicTileCollection = new();
-        private Dictionary<int, int> _requiredTileCollection = new();
-        private float _fScore = 0;
-
-
+        private int[] _desireTiles;
+        
         public void CollectTile(int tileIdx)
         {
             if (_dicTileCollection.ContainsKey(tileIdx))
@@ -22,24 +20,28 @@ namespace Character
         }
 
 
-        // TODO implement this function to set the desire tile
-        private Dictionary<int, int> GetRequireTileCollection()
+        public void SetDesireTiles(int[] tiles)
         {
-            return new Dictionary<int, int>();
+            _desireTiles = tiles;
         }
-
-
-        // TODO decide how to calculate the score based on the tile collection
+        
         public string GetScore()
         {
-            return _fScore + "";
+            int score = 0;
+            foreach (var tileIdx in _desireTiles)
+            {
+                if (_dicTileCollection.TryGetValue(tileIdx, out var value))
+                {
+                    score += 5;
+                    score += value;
+                }
+            }
+            return score + "";
         }
 
         public void OnResetPlayerInfo()
         {
-            _requiredTileCollection = GetRequireTileCollection();
             _dicTileCollection = new Dictionary<int, int>();
-            _fScore = 0;
         }
     }
 }

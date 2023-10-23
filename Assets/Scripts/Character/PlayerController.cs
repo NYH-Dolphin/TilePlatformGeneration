@@ -15,6 +15,12 @@ namespace Character
         
         public PlayerInfo PlayerInfo;
         public static bool BEnd;
+        public static PlayerController Instance;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         private void Start()
         {
