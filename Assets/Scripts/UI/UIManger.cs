@@ -94,7 +94,7 @@ namespace UI
         {
             if (description.text.Length is 1 or 0)
             {
-                UITypeWriter.Instance.SetDialogue("You don't enter any description!!", play: true,
+                UITypeWriter.Instance.SetDialogue("You didn't enter any description!!", play: true,
                     showDescription: true);
             }
             else
@@ -123,15 +123,16 @@ namespace UI
 
         public void SetTilesHint(int[] tiles)
         {
+            
             foreach (var tileHint in tileHints)
             {
                 tileHint.SetActive(false);
             }
 
             if (tiles == null) return;
-            foreach (var index in tiles)
+            foreach (var idx in tiles)
             {
-                tileHints[index].SetActive(true);
+                tileHints[idx].SetActive(true);
             }
         }
     }

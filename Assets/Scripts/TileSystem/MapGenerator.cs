@@ -18,6 +18,7 @@ namespace Editor.TileSystem
         public List<GameObject> tilesPrefab;
 
         private const string URL = "https://sleepy-waters-75825.herokuapp.com/https://aigame.engineering.nyu.edu/generate";
+        //private const string URL = "http://127.0.0.1:5000/generate";
 
 
         private int[,] _mapArray;
@@ -40,12 +41,12 @@ namespace Editor.TileSystem
             OnResetMap();
 
             // Load the new tile
-            for (int i = 0; i < width; i++)
+            for (int i = 0; i < height; i++)
             {
-                for (int j = 0; j < height; j++)
+                for (int j = 0; j < width; j++)
                 {
                     GameObject tile = Instantiate(tilesPrefab[_mapArray[i, j]], transform);
-                    tile.transform.position = new Vector3(i, j, 0);
+                    tile.transform.position = new Vector3(j, i, 0);
                 }
             }
         }
@@ -83,8 +84,8 @@ namespace Editor.TileSystem
         public void OnGenerateMap(string prompts)
         {
             // TODO generate MapArray based on the prompts;
-            // StartCoroutine(SendRequest(prompts));
-            RandomArray();
+            StartCoroutine(SendRequest(prompts));
+            //RandomArray();
             LoadTiles();
         }
 
@@ -96,8 +97,11 @@ namespace Editor.TileSystem
 
         public IEnumerator SendRequest(string prompt)
         {
-            string json = JsonUtility.ToJson(new { prompt = prompt });
-            byte[] body = Encoding.UTF8.GetBytes(json);
+            PromptData data = new PromptData();
+            data.prompt = prompt;
+            string jsonData = JsonUtility.ToJson(data);
+            Debug.Log("Sending JSON: " + jsonData);
+            byte[] body = Encoding.UTF8.GetBytes(jsonData);
 
             using (UnityWebRequest www = new UnityWebRequest(URL, "POST"))
             {
@@ -119,7 +123,11 @@ namespace Editor.TileSystem
                     // Parse the returned data
                     Debug.Log(www.downloadHandler.text);
                     int[,] parsedArray = ParseStringToArray(www.downloadHandler.text);
+                    Debug.Log(Convert2DArrayToString(parsedArray));
                     SetMapArray(parsedArray);
+                    LoadTiles();
+                    Debug.Log(Convert2DArrayToString(_mapArray));
+                    // Debug.Log(_mapArray.ToString());
                 }
             }
         }
@@ -128,11 +136,11 @@ namespace Editor.TileSystem
         {
 
             // Split the string to get individual arrays
-            string[] rows = jsonString.Trim('[', ']').Split(new string[] { "], [" }, StringSplitOptions.None);
+            string[] rows = jsonString.Replace("\"", "").Trim('[', ']').Split(new string[] { "], [" }, StringSplitOptions.None);
 
-            int[,] result = new int[10, 10];
+            int[,] result = new int[height, width];
 
-            for (int i = 0; i < rows.Length; i++)
+            for (int i = 0; i < height; i++)
             {
                 // Strip any remaining opening or closing square brackets from the row
                 string cleanedRow = rows[i].Replace("[", "").Replace("]", "");
@@ -149,5 +157,34 @@ namespace Editor.TileSystem
 
             return result;
         }
+    
+
+    public static string Convert2DArrayToString(int[,] array)
+    {
+        StringBuilder sb = new StringBuilder();
+        int rows = array.GetLength(0);
+        int cols = array.GetLength(1);
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                sb.Append(array[i, j]);
+                if (j != cols - 1)
+                {
+                    sb.Append(", ");
+                }
+            }
+            sb.AppendLine();
+        }
+
+        return sb.ToString();
     }
+
+    [System.Serializable]
+    public class PromptData
+    {
+        public string prompt;
+    }
+}
 }
