@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Character;
 using Editor.TileSystem;
 using TMPro;
@@ -18,6 +19,7 @@ namespace UI
         public AudioSource audAppear;
         public GameObject hint;
         public GameObject tileset;
+        public List<GameObject> tileHints;
 
         private Animator _aProfile;
         private Animator _aDialogueBox;
@@ -54,7 +56,7 @@ namespace UI
         {
             BEnable = true;
             hint.SetActive(false);
-            tileset.SetActive(true);
+            // tileset.SetActive(true);
             OnTriggerProfile();
             OnTriggerDialogueBox();
             StartCoroutine(PlayAppearAudio());
@@ -70,7 +72,7 @@ namespace UI
         {
             BEnable = false;
             hint.SetActive(true);
-            tileset.SetActive(false);
+            // tileset.SetActive(false);
             OnTriggerProfile();
             OnTriggerDialogueBox();
         }
@@ -110,11 +112,27 @@ namespace UI
             btnGo.enabled = true;
             inputField.interactable = true;
             inputField.text = "";
+            SetTilesHint(null);
         }
 
         public void OnClickHelp()
         {
             SceneManager.LoadScene("Help");
+        }
+
+
+        public void SetTilesHint(int[] tiles)
+        {
+            foreach (var tileHint in tileHints)
+            {
+                tileHint.SetActive(false);
+            }
+
+            if (tiles == null) return;
+            foreach (var index in tiles)
+            {
+                tileHints[index].SetActive(true);
+            }
         }
     }
 }

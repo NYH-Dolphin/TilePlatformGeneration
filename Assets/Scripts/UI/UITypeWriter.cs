@@ -11,7 +11,8 @@ namespace UI
     {
         public TextMeshProUGUI dialogueText;
         public float fDelay = 0.1f;
-        public string[] levelDescriptions = new string[] 
+
+        public string[] levelDescriptions =
         {
             "The ground looks unique here. Fetch me some!",
             "My spaceship needs a stable landing. What can I use?",
@@ -65,58 +66,58 @@ namespace UI
             "Craft me a vibrant Earth scene!"
         };
 
-        public int[][] tileLists = new int[][] 
+        public int[][] tileLists =
         {
-            new int[] {0, 1, 6},
-            new int[] {5, 7, 6},
-            new int[] {11, 1, 6},
-            new int[] {10, 2, 4},
-            new int[] {9, 7, 10},
-            new int[] {8, 14, 13},
-            new int[] {0, 6, 5},
-            new int[] {15, 8, 9},
-            new int[] {10, 0, 12},
-            new int[] {1, 11, 6},
-            new int[] {4, 3, 1},
-            new int[] {5, 0, 7},
-            new int[] {2, 11, 1},
-            new int[] {13, 14, 12},
-            new int[] {6, 5, 1},
-            new int[] {10, 3, 4},
-            new int[] {7, 11, 6},
-            new int[] {2, 5, 13},
-            new int[] {0, 10, 11},
-            new int[] {0, 2, 6},
-            new int[] {5, 9, 0},
-            new int[] {1, 10, 11},
-            new int[] {3, 12, 10},
-            new int[] {7, 10, 11},
-            new int[] {3, 2, 11},
-            new int[] {8, 9, 14},
-            new int[] {0, 11, 10},
-            new int[] {9, 7, 10},
-            new int[] {10, 7, 13},
-            new int[] {0, 8, 5},
-            new int[] {15, 10, 14},
-            new int[] {1, 6, 5},
-            new int[] {3, 2, 4},
-            new int[] {12, 14, 13},
-            new int[] {11, 6, 10},
-            new int[] {2, 1, 11},
-            new int[] {10, 11, 3},
-            new int[] {9, 14, 5},
-            new int[] {15, 8, 13},
-            new int[] {0, 10, 9},
-            new int[] {7, 9, 10},
-            new int[] {0, 12, 10},
-            new int[] {1, 11, 10},
-            new int[] {6, 7, 5},
-            new int[] {8, 0, 10},
-            new int[] {13, 14, 15},
-            new int[] {5, 10, 11},
-            new int[] {2, 5, 0},
-            new int[] {9, 0, 8},
-            new int[] {3, 11, 10},
+            new int[] { 0, 1, 6 },
+            new int[] { 5, 7, 6 },
+            new int[] { 11, 1, 6 },
+            new int[] { 10, 2, 4 },
+            new int[] { 9, 7, 10 },
+            new int[] { 8, 14, 13 },
+            new int[] { 0, 6, 5 },
+            new int[] { 15, 8, 9 },
+            new int[] { 10, 0, 12 },
+            new int[] { 1, 11, 6 },
+            new int[] { 4, 3, 1 },
+            new int[] { 5, 0, 7 },
+            new int[] { 2, 11, 1 },
+            new int[] { 13, 14, 12 },
+            new int[] { 6, 5, 1 },
+            new int[] { 10, 3, 4 },
+            new int[] { 7, 11, 6 },
+            new int[] { 2, 5, 13 },
+            new int[] { 0, 10, 11 },
+            new int[] { 0, 2, 6 },
+            new int[] { 5, 9, 0 },
+            new int[] { 1, 10, 11 },
+            new int[] { 3, 12, 10 },
+            new int[] { 7, 10, 11 },
+            new int[] { 3, 2, 11 },
+            new int[] { 8, 9, 14 },
+            new int[] { 0, 11, 10 },
+            new int[] { 9, 7, 10 },
+            new int[] { 10, 7, 13 },
+            new int[] { 0, 8, 5 },
+            new int[] { 15, 10, 14 },
+            new int[] { 1, 6, 5 },
+            new int[] { 3, 2, 4 },
+            new int[] { 12, 14, 13 },
+            new int[] { 11, 6, 10 },
+            new int[] { 2, 1, 11 },
+            new int[] { 10, 11, 3 },
+            new int[] { 9, 14, 5 },
+            new int[] { 15, 8, 13 },
+            new int[] { 0, 10, 9 },
+            new int[] { 7, 9, 10 },
+            new int[] { 0, 12, 10 },
+            new int[] { 1, 11, 10 },
+            new int[] { 6, 7, 5 },
+            new int[] { 8, 0, 10 },
+            new int[] { 13, 14, 15 },
+            new int[] { 5, 10, 11 },
+            new int[] { 2, 5, 0 },
+            new int[] { 9, 0, 8 },
+            new int[] { 3, 11, 10 },
         };
 
         public static UITypeWriter Instance;
@@ -174,6 +175,7 @@ namespace UI
                     yield return new WaitForSeconds(fDelay);
                 }
             }
+
             _bLock = false;
         }
 
@@ -191,9 +193,7 @@ namespace UI
                 StartCoroutine(PlayText(_showText, showDescription));
             }
         }
-
-
-        // TODO Get the desired description
+        
         public string GetDescription()
         {
             // Get a random index
@@ -203,10 +203,8 @@ namespace UI
             // Retrieve the description and tile list for the random index
             string randomDescription = levelDescriptions[randomIndex];
             int[] randomTileList = tileLists[randomIndex];
-
-
+            UIManger.Instance.SetTilesHint(randomTileList);
             return randomDescription;
         }
-    
     }
 }
